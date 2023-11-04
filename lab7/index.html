@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>Калькулятор</title>
+	</head>
+	<body>
+		<h1>Калькулятор</h1>
+		<!-- поле ввода первого числа -->
+		<input id="numFirst" />
+
+		<!-- блок с кнопками -->
+		<div id="operator_btns">
+			<button id="plus" onclick="plus()">+</button>
+			<button id="minus" onclick="minus()">-</button>
+			<button id="mul" onclick="mul()">x</button>
+			<button id="divide" onclick="divide()">:</button>
+		</div>
+
+		<!-- поле ввода второго числа -->
+		<input id="numSec" />
+		<br />
+
+		<!-- кнопка для рассчётов 
+		<button onclick="func()">Посчитать</button>-->
+		<p id="result"></p>
+		<script src="main.js"></script>
+		<script src="test.js"></script>
+	</body>
+</html>
