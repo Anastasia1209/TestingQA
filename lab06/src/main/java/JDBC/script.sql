@@ -1,13 +1,13 @@
-use sys;
+use Lab6_Testing;
 
 CREATE TABLE brands (
-                        brand_id INT PRIMARY KEY AUTO_INCREMENT,
+                        brand_id INT PRIMARY KEY identity(1, 1),
                         brand_name VARCHAR(255) NOT NULL
 );
 
 -- Создание таблицы автомобилей
 CREATE TABLE cars (
-                      car_id INT PRIMARY KEY AUTO_INCREMENT,
+                      car_id INT PRIMARY KEY identity(1, 1),
                       model VARCHAR(255) NOT NULL,
                       year INT,
                       price DECIMAL(10, 2),

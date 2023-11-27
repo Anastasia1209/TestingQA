@@ -1,5 +1,6 @@
 package JDBC;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.*;
 
 public class ConnectorDB {
@@ -8,14 +9,23 @@ public class ConnectorDB {
     private String user;
     private String pass;
 
-    public ConnectorDB(String url, String user, String pass) throws ClassNotFoundException {
+    public ConnectorDB(String driver, String url, String user, String pass) throws ClassNotFoundException {
+        try {
+            Class.forName(driver).getDeclaredConstructor().newInstance();
+        } catch (ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException |
+                 InvocationTargetException e) {
+            throw new RuntimeException("Driver class is missing in classpath", e);
+        }
         this.url = url;
         this.user = user;
         this.pass = pass;
     }
 
     public void getConnection() throws SQLException {
-        connection = DriverManager.getConnection("jdbc:mysql://" + url, user, pass);
+        /*connection = DriverManager.getConnection("jdbc:mysql://" + url, user, pass);
+        if (!connection.isClosed())
+            System.out.println("Connection successful");*/
+        connection = DriverManager.getConnection(url, user, pass);
         if (!connection.isClosed())
             System.out.println("Connection successful");
     }

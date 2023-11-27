@@ -5,7 +5,8 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) {
         try {
-            ConnectorDB connectorDB = new ConnectorDB("localhost:3306/sys", "root", "root");
+            String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
+            ConnectorDB connectorDB = new ConnectorDB(driver, "jdbc:sqlserver://DESKTOP-U07UAVE;databaseName=Lab6_Testing;trustServerCertificate=true;encrypt=false;IntegratedSecurity=false", "sa", "1111");
             connectorDB.getConnection();
 
             //connectorDB.insertCar("NewModel", 2023, 30000.00, 1);
