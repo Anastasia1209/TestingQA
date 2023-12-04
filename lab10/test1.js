@@ -1,4 +1,5 @@
 const assert = require("assert");
+const { TIMEOUT } = require("dns");
 const webdriver = require("selenium-webdriver");
 const By = webdriver.By;
 
@@ -31,6 +32,28 @@ class MainPage {
 		await this.driver.quit();
 	}
 }
+/*it("should be succesfully fund prod", async () => {
+	const driver = new webdriver.Builder().forBrowser("chrome").build();
+	const mainPage = new MainPage(driver);
+
+	try {
+		await mainPage.open();
+		await mainPage.performSearch("помада");
+
+		let result = await mainPage.getTitle();
+		assert.strictEqual(
+			"Вы искали помада - Relouis - декоративная косметика",
+			result
+		);
+	} catch (error) {
+		console.error("Произошла ошибка:", error.message);
+	} finally {
+		await mainPage.quit();
+		console.log("Test passed!");
+	}
+}, 1000000);
+*/
+
 async function testRun() {
 	const driver = new webdriver.Builder().forBrowser("chrome").build();
 	const mainPage = new MainPage(driver);
