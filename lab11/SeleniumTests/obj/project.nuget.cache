@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vA2NiJytDFn3lc7idA6yNz4pzCyl2ctCTQWl9UMyBrF9pS2u9YEK5j1fSHMxRNV8pF3NBr3PaiyNrLruraFD6A==",
+  "dgSpecHash": "b33xF1l5PBZTOQ6WvHbLGPH+xMIClolNdpxEh2Aae8kR1l8XPQ4tKRwskNrhhO2sB3+GxOWEgeZFMOvHGNl7Rw==",
   "success": true,
-  "projectFilePath": "D:\\Univer\\5sem\\TestingQA\\Nastya\\Lab11\\SeleniumTests\\SeleniumTests.csproj",
+  "projectFilePath": "D:\\Univer\\5sem\\TestingQA\\lab11\\SeleniumTests\\SeleniumTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Настенька\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
     "C:\\Users\\Настенька\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",

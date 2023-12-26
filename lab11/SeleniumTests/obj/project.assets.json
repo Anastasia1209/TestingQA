@@ -1507,11 +1507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Univer\\5sem\\TestingQA\\Nastya\\Lab11\\SeleniumTests\\SeleniumTests.csproj",
+      "projectUniqueName": "D:\\Univer\\5sem\\TestingQA\\lab11\\SeleniumTests\\SeleniumTests.csproj",
       "projectName": "SeleniumTests",
-      "projectPath": "D:\\Univer\\5sem\\TestingQA\\Nastya\\Lab11\\SeleniumTests\\SeleniumTests.csproj",
+      "projectPath": "D:\\Univer\\5sem\\TestingQA\\lab11\\SeleniumTests\\SeleniumTests.csproj",
       "packagesPath": "C:\\Users\\Настенька\\.nuget\\packages\\",
-      "outputPath": "D:\\Univer\\5sem\\TestingQA\\Nastya\\Lab11\\SeleniumTests\\obj\\",
+      "outputPath": "D:\\Univer\\5sem\\TestingQA\\lab11\\SeleniumTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
